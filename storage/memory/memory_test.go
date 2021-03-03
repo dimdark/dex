@@ -20,5 +20,6 @@ func TestStorage(t *testing.T) {
 	newStorage := func() storage.Storage {
 		return New(logger)
 	}
+	// 一致性
 	conformance.RunTests(t, newStorage)
 }
